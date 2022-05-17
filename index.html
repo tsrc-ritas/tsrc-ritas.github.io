@@ -44,57 +44,128 @@
                         <th>缺陷类型</th>
                         <th>链接</th>
                     </tr>
-                </thead>
-                    <tr>
-                        <td>J9 (1.8.0_275)</td>
-                        <td>J9 (1.8.0_275-b01) crashed while J9 (9.0.4) and J9 (11.0.9+11) did not.</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/11683">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td> J9 pass the test.</td>
-                        <td>J9 failed to pass the JUnit test after throwing StackOverflowError for a previous test. When removing that "previous test"</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/9381">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td> 9.0.4</td>
-                        <td>J9 (1.8.0_275) threw an AssertionError; J9 (11.0.9) threw an ArrayIndexOutOfBoundsException; OpenJDK (8u275</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/11685">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td> 11.0.9) passed the JUnit test while OpenJDK (8u275</td>
-                        <td>J9 (8u275</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/11684">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>J9(1.8.0_232) J9(11.0.5)</td>
-                        <td>J9: failed to throw VerifyError?</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/9385">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td> 9.0.4 executed a different program path compared to OpenJDK11</td>
-                        <td>OpenJDK 8u232</td>
-                        <td><a href="https://bugs.openjdk.java.net/browse/JDK-8259961">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>J9 (1.8.0_275)  J9 (11.0.9)</td>
-                        <td>J9 (1.8.0_275) and J9 (11.0.9) failed to threw AssertionError</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/11721">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>J9 (11.0.9)</td>
-                        <td>J9 (11.0.9) crashed while executing a test file on a heavy-load server.</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/11725">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>OracleJDK6</td>
-                        <td>JDK can not find MANIFEST.MF files by ClassLoader.getResources()</td>
-                        <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8244083">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>J9: 8u232</td>
-                        <td>J9 failed to execute all JUnit tests in a test file (caused by initializationError)</td>
-                        <td><a href="https://github.com/eclipse/openj9/issues/9357">Link</a></td>
-                    </tr>
+                </thead>                
+                <tr>
+                    <td>J9 (1.8.0_275)</td>
+                    <td>J9 (1.8.0_275-b01) crashed while J9 (9.0.4) and J9 (11.0.9+11) did not.</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11683">Link</td>
+                </tr>
+                <tr>
+                    <td> J9 pass the test.</td>
+                    <td>J9 failed to pass the JUnit test after throwing StackOverflowError for a previous test. When removing that "previous test"</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9381">Link</td>
+                </tr>
+                <tr>
+                    <td> 9.0.4</td>
+                    <td>J9 (1.8.0_275) threw an AssertionError; J9 (11.0.9) threw an ArrayIndexOutOfBoundsException; OpenJDK (8u275</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11685">Link</td>
+                </tr>
+                <tr>
+                    <td> 11.0.9) passed the JUnit test while OpenJDK (8u275</td>
+                    <td>J9 (8u275</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11684">Link</td>
+                </tr>
+                <tr>
+                    <td>J9(1.8.0_232) J9(11.0.5)</td>
+                    <td>J9: failed to throw VerifyError?</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9385">Link</td>
+                </tr>
+                <tr>
+                    <td> 9.0.4 executed a different program path compared to OpenJDK11</td>
+                    <td>OpenJDK 8u232</td>
+                    <td><a href="https://bugs.openjdk.java.net/browse/JDK-8259961">Link</td>
+                </tr>
+                <tr>
+                    <td>J9 (1.8.0_275)  J9 (11.0.9)</td>
+                    <td>J9 (1.8.0_275) and J9 (11.0.9) failed to threw AssertionError</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11721">Link</td>
+                </tr>
+                <tr>
+                    <td>J9 (11.0.9)</td>
+                    <td>J9 (11.0.9) crashed while executing a test file on a heavy-load server.</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11725">Link</td>
+                </tr>
+                <tr>
+                    <td>OracleJDK6</td>
+                    <td>JDK can not find MANIFEST.MF files by ClassLoader.getResources()</td>
+                    <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8244083">Link</td>
+                </tr>
+                <tr>
+                    <td>J9: 8u232</td>
+                    <td>J9 failed to execute all JUnit tests in a test file (caused by initializationError)</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9357">Link</td>
+                </tr>
+                <tr>
+                    <td> J9 said can not find the definition of class which is actually found in previous tests?</td>
+                    <td>In JUnit tests</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9336">Link</td>
+                </tr>
+                <tr>
+                    <td>J9: 8u232</td>
+                    <td>J9 failed to detect that the class is not defined during the loading stage?</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9323">Link</td>
+                </tr>
+                <tr>
+                    <td>Dragonwell (1.8.0_275)</td>
+                    <td>Dragonwell (1.8.0_275): getMessage() for an ArrayIndexOutOfBoundsException instance is null</td>
+                    <td><a href="https://github.com/alibaba/dragonwell8/issues/186">Link</td>
+                </tr>
+                <tr>
+                    <td>J9 (9.0.4)</td>
+                    <td>J9 (9.0.4) threw NullPointerException while other JVMs threw AssertionError.</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11723">Link</td>
+                </tr>
+                <tr>
+                    <td>Dragonwell8.2.2</td>
+                    <td>Dragonwell8.2.2: ClassLoader.getResources() can not work properly</td>
+                    <td><a href="https://github.com/alibaba/dragonwell8/issues/99">Link</td>
+                </tr>
+                <tr>
+                    <td> 9.0.4</td>
+                    <td>OpenJDK (8u232</td>
+                    <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8243483">Link</td>
+                </tr>
+                <tr>
+                    <td>Dragonwell8.2.2 Dragonwell11.0.5.1</td>
+                    <td>A possible bug in Verification: Dragonwell skipped an erroneous instruction?</td>
+                    <td><a href="https://github.com/alibaba/dragonwell8/issues/97">Link</td>
+                </tr>
+                <tr>
+                    <td>J9: 8u232</td>
+                    <td>J9 failed to throw the IllegalMonitorStateException</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9276">Link</td>
+                </tr>
+                <tr>
+                    <td>J9 (8u232)</td>
+                    <td>J9 Verification Issue: did not check uninitialized register?</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/9271">Link</td>
+                </tr>
+                <tr>
+                    <td>Dragonwell8.2.2</td>
+                    <td>A possible bug found in JVM differential testing dw</td>
+                    <td><a href="https://github.com/alibaba/dragonwell8/issues/89">Link</td>
+                </tr>
+                <tr>
+                    <td>OpenJDK: 8u232 8u242</td>
+                    <td>OpenJDK did not report ClassFormatError when class name is illegal</td>
+                    <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8242352">Link</td>
+                </tr>
+                <tr>
+                    <td>OpenJDK 8u275</td>
+                    <td>OpenJDK 8u275 crashed on a heavy-load server.</td>
+                    <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8262342">Link</td>
+                </tr>
+                <tr>
+                    <td>OpenJDK 9.0.4</td>
+                    <td>OpenJDK 9.0.4 crashed on a heavy-load server.</td>
+                    <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8262343">Link</td>
+                </tr>
+                <tr>
+                    <td>OpenJDK 11.0.9</td>
+                    <td>OpenJDK 11.0.9 crashed on a heavy-load server.</td>
+                    <td><a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8262344">Link</td>
+                </tr>
+                <tr>
                     <td>PMD</td>
                     <td>HardCodedCryptoKey</td>
                     <td><a href="https://github.com/pmd/pmd/issues/3368">Link</td>
