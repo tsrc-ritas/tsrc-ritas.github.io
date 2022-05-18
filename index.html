@@ -32,7 +32,7 @@
                     <h2 id="intro">斯发基斯可信自主系统研究院 - 可信软件研究中心</h2>
                     <td align="left">
                         斯发基斯可信自主系统研究院(RITAS)于2019年11月1日由深圳市政府授牌成立，预计5年总投资达1亿元人民币。研究院由图灵奖获得者、南科大计算机系杰出兼职教授Joseph Sifakis教授担任荣誉院长，计算机系主任姚新教授担任执行院长。研究团队实力雄厚，拥有独立PI 30 人，其中院士 5 人、国家特聘专家 12 人（青年4人）、 IEEE Fellow 8 人，另外还包含研究助理教授及博士后研究生等研究人员约70 人。研究院面向人机共融这一技术与社会发展的大趋势，围绕各种系统对“可信”的迫切共性需求，开展基础理论研究与关键技术研发，研究领域覆盖可信计算智能、可信软件、可信自动驾驶、可信智慧城市和可信智慧医疗等重点前沿方向。同时，研究院还以培养集聚创新人才、开展国际合作交流、促进科技成果转化为使命，努力建成世界级的可信自主系统研究院，以国际领先的前沿技术、人才队伍助力深圳市乃至大湾区智能产业的发展。
-                    </td>            
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -44,45 +44,65 @@
                         <th>缺陷类型</th>
                         <th>链接</th>
                     </tr>
-                </thead>                
+                </thead>
                 <tr>
-                    <td>J9 (1.8.0_275)</td>
-                    <td>J9 (1.8.0_275-b01) crashed while J9 (9.0.4) and J9 (11.0.9+11) did not.</td>
+                    <td>J9</td>
+                    <td>CrashError:1.8.0_275</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/11683">Link</td>
                 </tr>
                 <tr>
-                    <td> J9 pass the test.</td>
-                    <td>J9 failed to pass the JUnit test after throwing StackOverflowError for a previous test. When removing that "previous test"</td>
+                    <td>J9</td>
+                    <td>AssertionError:1.8.0_232, 11.0.5</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/9381">Link</td>
                 </tr>
                 <tr>
-                    <td> 9.0.4</td>
-                    <td>J9 (1.8.0_275) threw an AssertionError; J9 (11.0.9) threw an ArrayIndexOutOfBoundsException; OpenJDK (8u275</td>
+                    <td>J9</td>
+                    <td>ArrayIndexOutOfBoundsException:11.0.9</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/11685">Link</td>
                 </tr>
                 <tr>
-                    <td> 11.0.9) passed the JUnit test while OpenJDK (8u275</td>
-                    <td>J9 (8u275</td>
+                    <td>J9</td>
+                    <td>AssertionError:1.8.0_275</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11685">Link</td>
+                </tr>
+                <tr>
+                    <td>OpenJDK</td>
+                    <td>VerifyError:8u275, 9.0.4, 11.0.9</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11685">Link</td>
+                </tr>
+                <tr>
+                    <td>J9</td>
+                    <td>VerifyError:9.0.4</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11685">Link</td>
+                </tr>
+                <tr>
+                    <td>OpenJDK</td>
+                    <td>VerifyError:8u275, 9.0.4, 11.0.9</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/11684">Link</td>
                 </tr>
                 <tr>
-                    <td>J9(1.8.0_232) J9(11.0.5)</td>
-                    <td>J9: failed to throw VerifyError?</td>
+                    <td>J9</td>
+                    <td>VerifyError:9.0.4</td>
+                    <td><a href="https://github.com/eclipse/openj9/issues/11684">Link</td>
+                </tr>
+                <tr>
+                    <td>J9</td>
+                    <td>VerifyError:1.8.0_232, 11.0.5</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/9385">Link</td>
                 </tr>
                 <tr>
-                    <td> 9.0.4 executed a different program path compared to OpenJDK11</td>
-                    <td>OpenJDK 8u232</td>
+                    <td>OpenJDK</td>
+                    <td>InconsistentError: 9.0.4, 11.0.5</td>
                     <td><a href="https://bugs.openjdk.java.net/browse/JDK-8259961">Link</td>
                 </tr>
                 <tr>
-                    <td>J9 (1.8.0_275)  J9 (11.0.9)</td>
-                    <td>J9 (1.8.0_275) and J9 (11.0.9) failed to threw AssertionError</td>
+                    <td>J9</td>
+                    <td>AssertionError:1.8.0_275, 11.0.9</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/11721">Link</td>
                 </tr>
                 <tr>
-                    <td>J9 (11.0.9)</td>
-                    <td>J9 (11.0.9) crashed while executing a test file on a heavy-load server.</td>
+                    <td>J9</td>
+                    <td>CrashError:11.0.9</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/11725">Link</td>
                 </tr>
                 <tr>
@@ -106,13 +126,13 @@
                     <td><a href="https://github.com/eclipse/openj9/issues/9323">Link</td>
                 </tr>
                 <tr>
-                    <td>Dragonwell (1.8.0_275)</td>
-                    <td>Dragonwell (1.8.0_275): getMessage() for an ArrayIndexOutOfBoundsException instance is null</td>
+                    <td>Dragonwell</td>
+                    <td>ArrayIndexOutOfBoundsException:1.8.0_275</td>
                     <td><a href="https://github.com/alibaba/dragonwell8/issues/186">Link</td>
                 </tr>
                 <tr>
-                    <td>J9 (9.0.4)</td>
-                    <td>J9 (9.0.4) threw NullPointerException while other JVMs threw AssertionError.</td>
+                    <td>J9</td>
+                    <td>NullPointerException:9.0.4, other JVMs:AssertionError</td>
                     <td><a href="https://github.com/eclipse/openj9/issues/11723">Link</td>
                 </tr>
                 <tr>
@@ -142,27 +162,27 @@
                 </tr>
                 <tr>
                     <td>Dragonwell8.2.2</td>
-                    <td>A possible bug found in JVM differential testing dw</td>
+                    <td>ClassFormatError:openjdk9,J9</td>
                     <td><a href="https://github.com/alibaba/dragonwell8/issues/89">Link</td>
                 </tr>
                 <tr>
-                    <td>OpenJDK: 8u232 8u242</td>
-                    <td>OpenJDK did not report ClassFormatError when class name is illegal</td>
+                    <td>OpenJDK</td>
+                    <td>ClassFormatError:8u232 8u242</td>
                     <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8242352">Link</td>
                 </tr>
                 <tr>
-                    <td>OpenJDK 8u275</td>
-                    <td>OpenJDK 8u275 crashed on a heavy-load server.</td>
+                    <td>OpenJDK</td>
+                    <td>CrashError:8u275</td>
                     <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8262342">Link</td>
                 </tr>
                 <tr>
-                    <td>OpenJDK 9.0.4</td>
-                    <td>OpenJDK 9.0.4 crashed on a heavy-load server.</td>
+                    <td>OpenJDK</td>
+                    <td>CrashError:9.0.4</td>
                     <td><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8262343">Link</td>
                 </tr>
                 <tr>
-                    <td>OpenJDK 11.0.9</td>
-                    <td>OpenJDK 11.0.9 crashed on a heavy-load server.</td>
+                    <td>OpenJDK</td>
+                    <td>CrashError:11.0.9</td>
                     <td><a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8262344">Link</td>
                 </tr>
                 <tr>
@@ -447,6 +467,11 @@
                 </tr>
                 <tr>
                     <td>PMD</td>
+                    <td>UnusedAssignment</td>
+                    <td><a href="https://github.com/pmd/pmd/issues/3975">Link</a></td>
+                </tr>
+                <tr>
+                    <td>PMD</td>
                     <td>AvoidFieldNameMatchingMethodName</td>
                     <td><a href="https://github.com/pmd/pmd/issues/3936">Link</a></td>
                 </tr>
@@ -545,46 +570,16 @@
                     <td>RSPEC-2692</td>
                     <td><a href="https://community.sonarsource.com/t/false-negatives-about-the-rule-rspec-2692/62830">Link</a></td>
                 </tr>
-                <!-- <tr>
-                    <td>PMD</td>
-                    <td>AvoidAccessibilityAlteration</td>
-                    <td>/home//evaluation/PMD_GuidedDiv_Seed5/mutants/iter1/errorprone_AvoidAccessibilityAlteration/mutant_4744.java</td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>AvoidLiteralsInIfCondition</td>
-                    <td>/home//evaluation/PMD_GuidedDiv_Seed5/results/AvoidLiteralsInIfCondition.json</td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>BigIntegerInstantiation</td>
-                    <td>/home//evaluation/PMD_GuidedDiv_Seed5/mutants/iter1/performance_BigIntegerInstantiation/mutant_2006.java</td>
-                </tr> -->
                 <tr>
                     <td>PMD</td>
                     <td>CompareObjectsWithEquals</td>
                     <td><a href="https://github.com/pmd/pmd/issues/3947">Link</a></td>
                 </tr>
-                <!-- <tr>
-                    <td>PMD</td>
-                    <td>ConstructorCallsOverridableMethod</td>
-                    <td>/home//evaluation/PMD_GuidedDiv_Seed5/results/ConstructorCallsOverridableMethod.json</td>
-                </tr> -->
                 <tr>
                     <td>PMD</td>
                     <td>FinalFieldCouldBeStatic</td>
                     <td><a href="https://github.com/pmd/pmd/issues/3949">Link</a></td>
                 </tr>
-                <!-- <tr>
-                    <td>PMD</td>
-                    <td>ForLoopCanBeForeach</td>
-                    <td>/home//evaluation/PMD_GuidedDiv_Seed5/results/ForLoopCanBeForeach.json</td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>GuardLogStatement</td>
-                    <td>/home//evaluation/PMD_GuidedDiv_Seed5/results/GuardLogStatement.json</td>
-                </tr> -->
                 <tr>
                     <td>PMD</td>
                     <td>IdempotentOperations</td>
@@ -610,12 +605,6 @@
                     <td>LocalVariableCouldBeFinal</td>
                     <td><a href="https://github.com/pmd/pmd/issues/3963">Link</a></td>
                 </tr>
-                <!-- <tr>
-                    <td>PMD</td>
-                    <td>LiteralsFirstInComparisons</td>
-                    <td></td>
-                </tr>
-                 -->
                 <tr>
                     <td>PMD</td>
                     <td>NullAssignment</td>
@@ -626,67 +615,11 @@
                     <td>UseConcurrentHashMap</td>
                     <td><a href="https://github.com/pmd/pmd/issues/3962">Link</a></td>
                 </tr>
-                <!-- <tr>
-                    <td>PMD</td>
-                    <td>NonThreadSafeSingleton</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>SimplifiableTestAssertion</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>StringBufferInstantiationWithChar</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>UnusedAssignment</td>
-                    <td></td>
-                </tr>
-                
-                <tr>
-                    <td>PMD</td>
-                    <td>SimplifiedTernary</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>PMD</td>
-                    <td>SimplifyBooleanExpressions</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>SpotBugs</td>
-                    <td>BIT_IOR_OF_SIGNED_BYTE</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>SpotBugs</td>
-                    <td>DLS_DEAD_LOCAL_STORE</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>SpotBugs</td>
-                    <td>FI_EXPLICIT_INVOCATION</td>
-                    <td></td>
-                </tr> -->
                 <tr>
                     <td>SpotBugs</td>
                     <td>MS_EXPOSE_REP</td>
                     <td><a href="https://github.com/spotbugs/spotbugs/issues/2042">Link</a></td>
                 </tr>
-                <!-- <tr>
-                    <td>SpotBugs</td>
-                    <td>PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>SpotBugs</td>
-                    <td>DM_INVALID_MIN_MAX</td>
-                    <td></td>
-                </tr> -->
             </table>
         </td>
     </table>
